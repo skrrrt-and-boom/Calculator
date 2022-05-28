@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./sw.jpg);
+  background-size: cover;
+  font-size: 1.5em;
+  font-family: 'Neonderthaw', cursive;
+}
+
+.calculator {
+  width: 400px;
+  height: 500px;
+  background-color: rgba(0,0,0,0.7);
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  -webkit-box-reflect: below 1em linear-gradient(transparent, rgba(73, 86, 120,0.2));
+}
+
+.screen {
+  box-shadow:  0 0 .2em red inset;
+  border-radius: 3px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3px;
+}
+
+.button, .button-1 {
+  box-shadow:  0 0 .2em royalblue inset;
+  border-radius:3px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-1 {
+  box-shadow:  0 0 .2em rgba(152, 8, 139, 1) inset;
+}
+
+.button:hover {
+  transition: 0.3s;
+  background-color: royalblue;
+}
+
+.button-1:hover {
+    transition: 0.3s;
+    background-color: rgba(152, 8, 139, 1);
+}
+
+.button:active, .button-1:active {
+  transition: none;
+  margin: 3px;
+  transform: scale(1, -1);
+}
+
+.button:visited {
+  background: royalblue;
+}
+
+p {
+  margin: 0;
+  cursor: default;
+}
+
+footer {
+  position: absolute;
+  bottom: 7%;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
