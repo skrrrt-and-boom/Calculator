@@ -22,6 +22,12 @@ body {
 .screen {
   box-shadow:  0 0 .2em red inset;
   border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 50px;
+  font-size: 50px;
 }
 
 .buttons {
@@ -56,7 +62,6 @@ body {
 .button:active, .button-1:active {
   transition: none;
   margin: 3px;
-  transform: scale(1, -1);
 }
 
 .button:visited {
